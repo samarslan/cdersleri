@@ -1,5 +1,5 @@
 #include<stdio.h>
-main(){
+int main(){
 	float vize, final, quiz, ortalama;
 	printf("vize gir: ");
 	scanf("%f", &vize);
