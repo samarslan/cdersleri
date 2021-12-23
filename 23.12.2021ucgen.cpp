@@ -1,12 +1,31 @@
 #include<stdio.h>
 int main(){
-  int k1,k2,k3;
-  scanf("%d", &k1);
-  scanf("%d", &k2);
-  scanf("%d", &k3);
+  int a,b,c;
+  printf("a kenarını girin: ");
+  scanf("%d", &a);
+  printf("b kenarını girin: ");
+  scanf("%d", &b);
+  printf("c kenarını girin: ");
+  scanf("%d", &c);
 
-  if (k1+k2<k3&&k1-k2<k3){
-    printf("üçgen");
+  if(a<b+c && a>b-c || b<a+c && b>a-c || c<b+a && c>a-b){
+    printf("Bu şekil üçgendir");
+
+    if(a==b && a!=c || a==c && a!=b || b==c && b!=a){
+      printf("\nİkizkenar üçgendir");
+    }
+
+    if(a!=b && a!=c && b!=c){
+      printf("\nÇeşitkenar üçgendir");
+    }
+
+    if(a==b && a==c){
+      printf("\nEşkenar üçgendir");
+    }
+
   }
-  else if(k2+k3<k1&&k2-k3<k1 )
+  else
+  {
+    printf("Bu şekil üçgen değildir");
+  }
 }
