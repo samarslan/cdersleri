@@ -24,5 +24,4 @@ int main(){
 	if(ortalama<29&&ortalama>=0){
 		printf("FF %f", ortalama);
 	}
-	
 }
