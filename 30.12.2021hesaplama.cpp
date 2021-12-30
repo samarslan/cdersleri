@@ -15,24 +15,20 @@ main(){
   scanf("%d", &sec);
 
   if(sec==1){
-    
     c=a+b;
     printf("toplam: %d",c);
   }
   if(sec==2){
-    
     c=a-b;
     printf("cevap: %d",c);
   }
   if(sec==3){
-    
     c=a*b;
     printf("cevap: %d",c);
   }
   if(sec==4){
-    
     c=a/b;
-    printf("cevap: %d",c);
+    printf("Cevap: %d",c);
   }
   
 }
