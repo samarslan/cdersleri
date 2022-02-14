@@ -12,7 +12,11 @@ int main()
   o = (((sayi-b) % 100)/10);
   y = ((sayi-(o*10)-b)/100);
 
-  if(y==b&&o!=y){
+  if(sayi<100||sayi>=1000)
+  {
+    printf("Geçersiz Giriş");
+  }
+  else if(y==b&&o!=y){
     printf("Mükemmel sayı. ");
   }
   else if(y==o&&o!=b){
