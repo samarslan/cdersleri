@@ -36,10 +36,13 @@ int main()
       scanf("%d", &b);
 
       c=a*b;
+      
       break;
     }
     default:{
-      printf("Geçersiz Seçim.");
+      printf("Geçersiz Seçim");
+
+      break;
     }
   }
   printf("%d", c);
