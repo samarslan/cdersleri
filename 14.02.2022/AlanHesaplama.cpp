@@ -40,7 +40,7 @@ int main()
       break;
     }
     default:{
-      printf("Geçersiz Seçim");
+      printf("Geçersiz Seçim.");
 
       break;
     }

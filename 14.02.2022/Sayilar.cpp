@@ -14,7 +14,7 @@ int main()
 
   if(sayi<100||sayi>=1000)
   {
-    printf("Geçersiz Giriş");
+    printf("Geçersiz Giriş. ");
   }
   else if(y==b&&o!=y){
     printf("Mükemmel sayı. ");
