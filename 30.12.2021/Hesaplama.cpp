@@ -5,6 +5,7 @@ int main(){
 
   printf("a sayisi:");
   scanf("%d", &a);
+  
   printf("b sayisi:");
   scanf("%d", &b);
 
