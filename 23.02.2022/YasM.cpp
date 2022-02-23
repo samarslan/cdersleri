@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
   int gun, ay, yil;
@@ -45,30 +45,15 @@ int main(){
   ayYas = buAy-ay;
   yilYas = buYil-yil;
   
-  if (gunYas<0)
-  {
-    gunYas=gunYas*-1;
-  }
-  if (ayYas<0)
-  {
-    ayYas=ayYas*-1;
-  }
-  
-  if (gun>bugun)
-  {
-    gunYas=31-gunYas;
-    ayYas--;
-  }
-  if(ayYas<0)
-  {
-    yilYas=yilYas-(ayYas*-1);
-    ayYas=12-(ayYas*-1);
-  }
-  if (ay>buAy)
-  {
-    ayYas=12-ayYas;
-    yilYas=yilYas-1;
-  }
+ if(ay>buAy)
+ {
+     ayYas = 12 - ((buAy - ay) * -1);
+     yilYas--;
+ }
+ if (gun > bugun)
+ {
+     gunYas = 31 - ((bugun - gun) * -1);
+ }
   
   printf("\n%d gün %d ay %d yıl yaşındasınız. ", gunYas, ayYas, yilYas);
 }
