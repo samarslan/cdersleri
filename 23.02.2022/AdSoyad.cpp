@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include <string.h>
 
 int main(){
   char ad[20];
@@ -9,6 +8,5 @@ int main(){
   printf("Soyad girin: ");
   scanf("%s", soyad);
 
-  sprintf(ad,"%s %s",ad, soyad);
-  printf("%s", ad);
+  printf("%s %s", ad, soyad);
 }
