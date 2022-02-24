@@ -47,12 +47,18 @@ int main(){
   
  if(ay>buAy)
  {
-     ayYas = 12 - ((buAy - ay) * -1);
-     yilYas--;
+   ayYas = 12 - ((buAy - ay) * -1);
+   yilYas--;
  }
  if (gun > bugun)
  {
-     gunYas = 31 - ((bugun - gun) * -1);
+  gunYas = 31 - ((bugun - gun) * -1);
+  ayYas--; 
+ }
+ if(ayYas<0)
+ {
+   yilYas--;
+   ayYas=12-(ayYas*-1);
  }
   
   printf("\n%d gün %d ay %d yıl yaşındasınız. ", gunYas, ayYas, yilYas);
