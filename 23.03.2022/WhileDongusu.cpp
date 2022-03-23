@@ -8,6 +8,6 @@ int main(){
     t=x+t;
     x++;
   }
-  printf("%d",t);
+  printf("\n%d",t);
   printf("\n%d\n",(100*101)/2);
 }
