@@ -1,5 +1,7 @@
 #include <stdio.h>
-#include <curses.h>
+//If you are using windows use conio.h if not then use curses.h
+//#include <curses.h>
+#include <conio.h>
 
 int main(){
   int hiz, yol, secim;
