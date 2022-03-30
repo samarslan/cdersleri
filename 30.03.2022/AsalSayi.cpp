@@ -11,7 +11,7 @@ int main() {
 	} else if (sayi == 2) {
 		asalMi = true;
 	} else {
-		for (int i = 2; i < sayi; i++) {
+		for (int i = 3; i < sayi; i++) {
 			if (sayi % i == 0) {
 				asalMi = false;
 				break;
