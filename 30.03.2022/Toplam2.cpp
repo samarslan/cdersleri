@@ -10,6 +10,6 @@ int main(){
     toplam=toplam+sayi;
     count++;
   }
-  while(sayi<100);
+  while(sayi!=0);
   printf("%d adet sayı girildi toplamları %d\n", count, toplam);
 }
