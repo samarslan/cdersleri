@@ -1,17 +1,27 @@
 #include <stdio.h>
 
 int main() {
-	char dizi[5][5] = {' '};
-	for (int i = 0; i < 5; i++) {
-		for (int k = 0; k < 5; k++) {
-			if (i + k == 2 || i + k == 6) {
-				dizi[i][k] = '*';
-			} 
-      else if (i + k == 4 && i % 2==1) {
-				dizi[i][k] = '*';
-			}
-			printf("%c", dizi[i][k]);
-		}
-		printf("\n");
-	}
+  int i, j;
+
+  for(i=1; i<=5;i++){
+    for(j=1;j<=9;j++){
+      if((j<=(9-(2*i-1))/2)||(j>(i+4)))
+        printf(" ");
+      else
+        printf("*");
+      
+    }
+    printf("\n");
+  }
+  for(i=4; i>=1;i--){
+    for(j=9;j>=1;j--){
+      if((j<=(9-(2*i-1))/2)||(j>(i+4)))
+        printf(" ");
+      else
+        printf("*");
+      
+    }
+    printf("\n");
+  }
+  
 }
