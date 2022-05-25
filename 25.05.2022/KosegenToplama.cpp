@@ -23,4 +23,13 @@ int main() {
 		}
 	}
 	printf("%d", y);
+printf("\n");
+  printf("\n");
+y=0;
+  for (int i = 0; i < 4; i=i+3) {
+		for (int j = 0; j < 4; j=j+3) {
+				y = y + a[i][j];
+		}
+	}
+  printf("%d", y);
 }
